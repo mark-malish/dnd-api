@@ -1,0 +1,43 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.spellInfo {
+  text-align: center;
+  padding: 50px 50px;
+}
+.potatoes {
+  display: flex;
+  flex-direction: row;
+  row-gap: 1em;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.split {
+  flex-direction: column;
+}
+.meat {
+  text-align: center;
+  padding: 50px 50px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: rgb(24,24,24);
+  color: rgb(255,255,255);
+}
