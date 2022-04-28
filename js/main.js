@@ -1,9 +1,7 @@
 document.querySelector('button').addEventListener('click', getFetch)
 
-//.split(' ').join('-').toLowerCase() <-- should apply this to input
-
 function getFetch() {    
-const choice = document.querySelector('input').value
+const choice = document.querySelector('input').value.split(' ').join('-').toLowerCase()
 const url = `https://www.dnd5eapi.co/api/spells/${choice}`
 fetch(url)
     .then(res => res.json()) // parse response as JSON
@@ -29,4 +27,3 @@ fetch(url)
         console.log(`error ${err}`)
     });
 }
-
